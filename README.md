@@ -22,8 +22,6 @@ The website combines **modern web design** with a **gold-and-black royal theme**
 
 ---
 
----
-
 ## ⚙️ Tech Stack
 
 | Category | Technology |
