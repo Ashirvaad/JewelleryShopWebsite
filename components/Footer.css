@@ -2,7 +2,7 @@
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 80px 20px 40px;
+  padding: 80px 100px 40px;
   position: relative;
   overflow: hidden;
 }
@@ -132,3 +132,4 @@
     font-size: 1.6rem;
   }
 }
+
