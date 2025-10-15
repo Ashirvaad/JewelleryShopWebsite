@@ -1,0 +1,167 @@
+.contact-section {
+  background: #000;
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-title {
+  font-family: "Cinzel", serif;
+  color: #d4af37;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.2s ease;
+}
+
+.contact-subtitle {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+  animation: fadeIn 1.8s ease;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 320px;
+  text-align: left;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.icon {
+  color: #d4af37;
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+
+.info-item h3 {
+  font-family: "Cinzel", serif;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.info-item p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 15px;
+}
+
+.contact-cta {
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeIn 2s ease;
+}
+
+.contact-cta h3 {
+  color: #fff;
+  font-family: "Cinzel", serif;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.cta-button {
+  background: linear-gradient(90deg, #b8860b, #d4af37);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #d4af37, #b8860b);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .info-item {
+    justify-content: center;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+}

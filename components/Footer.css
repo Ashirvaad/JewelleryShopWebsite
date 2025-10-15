@@ -1,0 +1,134 @@
+.footer-section {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h2 {
+  font-family: "Cinzel", serif;
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  animation: fadeInDown 1.2s ease;
+}
+
+.footer-brand p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  animation: fadeIn 1.8s ease;
+}
+
+.footer-divider {
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #b8860b, #d4af37, #b8860b);
+  margin: 0 auto 40px;
+  border-radius: 5px;
+  animation: glow 2.5s infinite alternate;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #d4af37;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.footer-socials a {
+  color: #d4af37;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-bottom .credits {
+  margin-top: 5px;
+}
+
+.footer-bottom span {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 15px;
+  }
+
+  .footer-socials {
+    gap: 20px;
+  }
+
+  .footer-brand h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,116 @@
+.testimonial-section {
+  background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+  color: #fff;
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-title {
+  font-family: "Cinzel", serif;
+  color: #d4af37;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1.2s ease;
+}
+
+.testimonial-subtitle {
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  font-size: 1rem;
+  line-height: 1.6;
+  animation: fadeIn 1.8s ease;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 20px;
+  padding: 40px 25px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  animation: fadeInUp 1.4s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.25);
+}
+
+.quote-icon {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  color: #eee;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.testimonial-card h3 {
+  color: #d4af37;
+  font-family: "Cinzel", serif;
+  margin-bottom: 5px;
+}
+
+.testimonial-card span {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-title {
+    font-size: 1.8rem;
+  }
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+}
