@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand */}
         <div className="footer-brand">
-          <h2>Padma Jewellers</h2>
+          <h2>Shree Laxmi Jewellers</h2>
           <p>Crafting timeless beauty, one jewel at a time.</p>
         </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="footer-bottom">
-          <p>© 2025 Padma Jewellers. All Rights Reserved.</p>
+          <p>© 2025 Shree Laxmi Jewellers. All Rights Reserved.</p>
           <p className="credits">
             Designed with 💛 by <span>Ashirvaad Bhat</span>
           </p>
@@ -52,3 +52,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
